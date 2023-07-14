@@ -1,7 +1,6 @@
 flask
 flask_sqlalchemy
 datetime
-os
 openai
 flask_pretty
 requests
