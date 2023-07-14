@@ -17,7 +17,7 @@ base_url = "https://www.googleapis.com/customsearch/v1"
 app = Flask(__name__)
 prettify = Prettify(app)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////tmp/test.db'  # Use the correct path for your application
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'sqlite:////tmp/test.db')#'sqlite:////tmp/test.db'  # Use the correct path for your application
 db = SQLAlchemy(app)
 
 class Page(db.Model):
