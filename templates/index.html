@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Pages</title>
+</head>
+<body>
+    <h1>All Pages</h1>
+    <ul>
+        {% for page in pages %}
+        <li>
+            <a href="/{{ page.path }}">{{ page.path }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
