@@ -4,3 +4,4 @@ datetime
 openai
 flask_pretty
 requests
+psycopg2-binary
